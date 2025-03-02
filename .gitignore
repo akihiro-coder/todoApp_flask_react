@@ -1,0 +1,34 @@
+# ==================
+# ✅ OSごとの不要ファイル
+# ==================
+.DS_Store
+Thumbs.db
+
+# ==================
+# ✅ Backend（Flask）用
+# ==================
+backend/venv/                 # 仮想環境
+backend/__pycache__/          # Pythonのキャッシュ
+backend/*.pyc
+backend/*.pyo
+backend/.env                  # 環境変数（APIキーなど）
+backend/instance/             # Flaskのインスタンスディレクトリ
+backend/*.sqlite3             # SQLiteのデータベース（Git管理しない場合）
+
+# ==================
+# ✅ Frontend（React + TypeScript）用
+# ==================
+frontend/node_modules/         # npmの依存関係（Git管理不要）
+frontend/dist/                 # Viteのビルド成果物
+frontend/npm-debug.log*        # npmのデバッグログ
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/*.tsbuildinfo         # TypeScriptのキャッシュ情報
+
+# ==================
+# ✅ PyCharm用
+# ==================
+.idea/                         # PyCharmのプロジェクト設定フォルダ
+*.iml                          # PyCharmの設定ファイル
+workspace.xml                  # PyCharmのワークスペース設定（個別環境用）
